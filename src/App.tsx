@@ -422,8 +422,8 @@ function HomePage({ onNavigate }: { onNavigate: (path: string) => void }) {
                     )}
                   </div>
 
-                  {/* View toggle — desktop only */}
-                  <div className="hidden sm:flex items-center rounded-lg border border-slate-200 overflow-hidden shrink-0">
+                  {/* View toggle */}
+                  <div className="flex items-center rounded-lg border border-slate-200 overflow-hidden shrink-0">
                     <button
                       onClick={() => setView('grid')}
                       aria-label="Grid view"
@@ -477,7 +477,7 @@ function HomePage({ onNavigate }: { onNavigate: (path: string) => void }) {
                   ref={gridRef}
                   className={
                     view === 'grid'
-                      ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-6 justify-items-center sm:justify-items-stretch'
+                      ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-6'
                       : 'flex flex-col gap-4'
                   }
                 >
@@ -591,7 +591,7 @@ function StateCoverageModal({
 
               {statePuppies.length > 0 ? (
                 <>
-                  <div id="state-results-top" className="mt-6 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 justify-items-center sm:justify-items-stretch">
+                  <div id="state-results-top" className="mt-6 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
                     {pageItems.map((p, i) => (
                       <PuppyCard key={p.id} puppy={p} index={i} view="grid" />
                     ))}

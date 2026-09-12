@@ -307,10 +307,6 @@ export function PuppyDetail({ puppyId, onNavigate }: Props) {
       <div className="max-w-5xl mx-auto px-4 py-6">
         <a
           href={homeLink()}
-          onClick={(e) => {
-            e.preventDefault();
-            onNavigate('');
-          }}
           className="inline-flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-emerald-600 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />

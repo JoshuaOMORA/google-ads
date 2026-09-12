@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 
 export interface RouteState {
   path: string;
@@ -18,14 +18,6 @@ const INFO_PAGES = new Set([
   'privacy-policy',
 ]);
 
-function isRouteHash(hash: string): boolean {
-  const clean = hash.replace(/^#/, '');
-  const parts = clean.split('/').filter(Boolean);
-  if (parts.length >= 2 && parts[0] === 'puppies') return true;
-  if (parts.length >= 2 && parts[0] === 'page' && parts[1] !== undefined && INFO_PAGES.has(parts[1])) return true;
-  return false;
-}
-
 function parseHash(): RouteState {
   const hash = window.location.hash.replace(/^#/, '');
   const parts = hash.split('/').filter(Boolean);
@@ -40,12 +32,29 @@ function parseHash(): RouteState {
 
 export function useHashRoute() {
   const [route, setRoute] = useState<RouteState>(() => parseHash());
+  const routeRef = useRef(route.path);
 
   useEffect(() => {
     const onChange = () => {
-      if (!isRouteHash(window.location.hash)) return;
-      setRoute(parseHash());
-      window.scrollTo({ top: 0 });
+      const newRoute = parseHash();
+      const prevPath = routeRef.current;
+      routeRef.current = newRoute.path;
+      setRoute(newRoute);
+
+      if (newRoute.path !== 'home') {
+        window.scrollTo({ top: 0 });
+      } else if (prevPath !== 'home') {
+        const sectionId = window.location.hash.replace(/^#/, '');
+        if (sectionId) {
+          setTimeout(() => {
+            const el = document.getElementById(sectionId);
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            else window.scrollTo({ top: 0 });
+          }, 50);
+        } else {
+          window.scrollTo({ top: 0 });
+        }
+      }
     };
     window.addEventListener('hashchange', onChange);
     return () => window.removeEventListener('hashchange', onChange);

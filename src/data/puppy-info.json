@@ -12,7 +12,7 @@
       "Affectionate",
       "Friendly"
     ],
-    "price": 895,
+    "price": 975,
     "location": "Beaumont, TX",
     "state": "Texas",
     "size": "Medium-Large",
@@ -38,7 +38,7 @@
       "Affectionate",
       "Playful"
     ],
-    "price": 875,
+    "price": 950,
     "location": "Amarillo, TX",
     "state": "Texas",
     "size": "Medium-Large",
@@ -64,7 +64,7 @@
       "Easygoing",
       "Charming"
     ],
-    "price": 1495,
+    "price": 1200,
     "location": "San Diego, CA",
     "state": "California",
     "size": "Small",
@@ -90,7 +90,7 @@
       "Easygoing",
       "Curious"
     ],
-    "price": 1295,
+    "price": 1175,
     "location": "Austin, TX",
     "state": "Texas",
     "size": "Small",
@@ -116,7 +116,7 @@
       "Alert",
       "Confident"
     ],
-    "price": 995,
+    "price": 800,
     "location": "San Antonio, TX",
     "state": "Texas",
     "size": "Large",
@@ -142,7 +142,7 @@
       "Alert",
       "Loyal"
     ],
-    "price": 825,
+    "price": 750,
     "location": "Waco, TX",
     "state": "Texas",
     "size": "Large",
@@ -168,7 +168,7 @@
       "Gentle",
       "Friendly"
     ],
-    "price": 895,
+    "price": 775,
     "location": "Little Rock, AR",
     "state": "Arkansas",
     "size": "Medium-Large",
@@ -194,7 +194,7 @@
       "Outgoing",
       "Playful"
     ],
-    "price": 875,
+    "price": 725,
     "location": "Laredo, TX",
     "state": "Texas",
     "size": "Medium-Large",
@@ -220,7 +220,7 @@
       "Social",
       "Playful"
     ],
-    "price": 825,
+    "price": 750,
     "location": "Lawton, OK",
     "state": "Oklahoma",
     "size": "Medium-Large",
@@ -246,7 +246,7 @@
       "Affectionate",
       "Quick to learn"
     ],
-    "price": 995,
+    "price": 925,
     "location": "McAllen, TX",
     "state": "Texas",
     "size": "Medium",
@@ -272,7 +272,7 @@
       "Alert",
       "Bright"
     ],
-    "price": 895,
+    "price": 850,
     "location": "College Station, TX",
     "state": "Texas",
     "size": "Medium",
@@ -298,7 +298,7 @@
       "Devoted",
       "Clever"
     ],
-    "price": 875,
+    "price": 650,
     "location": "El Paso, TX",
     "state": "Texas",
     "size": "Small",
@@ -324,7 +324,7 @@
       "Spunky",
       "Devoted"
     ],
-    "price": 795,
+    "price": 600,
     "location": "Frisco, TX",
     "state": "Texas",
     "size": "Small",
@@ -350,7 +350,7 @@
       "Social",
       "Curious"
     ],
-    "price": 795,
+    "price": 550,
     "location": "Kansas City, KS",
     "state": "Kansas",
     "size": "Small-Medium",
@@ -376,7 +376,7 @@
       "Curious",
       "Social"
     ],
-    "price": 825,
+    "price": 575,
     "location": "Lubbock, TX",
     "state": "Texas",
     "size": "Small-Medium",
@@ -402,7 +402,7 @@
       "Outgoing",
       "Energetic"
     ],
-    "price": 875,
+    "price": 700,
     "location": "Santa Fe, NM",
     "state": "New Mexico",
     "size": "Medium",
@@ -428,7 +428,7 @@
       "Energetic",
       "Independent"
     ],
-    "price": 895,
+    "price": 725,
     "location": "Springdale, AR",
     "state": "Arkansas",
     "size": "Medium",
@@ -454,7 +454,7 @@
       "Bold",
       "Feisty"
     ],
-    "price": 995,
+    "price": 800,
     "location": "Denver, CO",
     "state": "Colorado",
     "size": "Toy",
@@ -480,7 +480,7 @@
       "Playful",
       "Confident"
     ],
-    "price": 950,
+    "price": 650,
     "location": "Colorado Springs, CO",
     "state": "Colorado",
     "size": "Medium-Large",
@@ -506,7 +506,7 @@
       "Devoted",
       "Energetic"
     ],
-    "price": 975,
+    "price": 675,
     "location": "Nashville, TN",
     "state": "Tennessee",
     "size": "Medium-Large",
@@ -532,7 +532,7 @@
       "Patient",
       "Playful"
     ],
-    "price": 1195,
+    "price": 1100,
     "location": "Fort Collins, CO",
     "state": "Colorado",
     "size": "Small",
@@ -558,7 +558,7 @@
       "Gentle",
       "Patient"
     ],
-    "price": 1195,
+    "price": 1100,
     "location": "Tyler, TX",
     "state": "Texas",
     "size": "Small",
@@ -584,7 +584,7 @@
       "Playful",
       "Smart"
     ],
-    "price": 895,
+    "price": 775,
     "location": "Fort Worth, TX",
     "state": "Texas",
     "size": "Medium",
@@ -610,7 +610,7 @@
       "Loyal",
       "Playful"
     ],
-    "price": 875,
+    "price": 750,
     "location": "Roswell, NM",
     "state": "New Mexico",
     "size": "Medium",
@@ -636,7 +636,7 @@
       "Curious",
       "Alert"
     ],
-    "price": 1095,
+    "price": 850,
     "location": "Killeen, TX",
     "state": "Texas",
     "size": "Small-Medium",
@@ -662,7 +662,7 @@
       "Alert",
       "Confident"
     ],
-    "price": 1125,
+    "price": 875,
     "location": "Shreveport, LA",
     "state": "Louisiana",
     "size": "Small-Medium",
@@ -688,7 +688,7 @@
       "Friendly",
       "Gentle"
     ],
-    "price": 1095,
+    "price": 900,
     "location": "Oklahoma City, OK",
     "state": "Oklahoma",
     "size": "Giant",
@@ -714,7 +714,7 @@
       "Gentle",
       "Calm"
     ],
-    "price": 1125,
+    "price": 900,
     "location": "Houston, TX",
     "state": "Texas",
     "size": "Giant",
@@ -740,7 +740,7 @@
       "Friendly",
       "Alert"
     ],
-    "price": 1095,
+    "price": 825,
     "location": "Abilene, TX",
     "state": "Texas",
     "size": "Small-Medium",
@@ -766,7 +766,7 @@
       "Bold",
       "Intelligent"
     ],
-    "price": 1050,
+    "price": 800,
     "location": "Fort Smith, AR",
     "state": "Arkansas",
     "size": "Small-Medium",
@@ -792,7 +792,7 @@
       "Playful",
       "Gentle"
     ],
-    "price": 1395,
+    "price": 1200,
     "location": "Los Angeles, CA",
     "state": "California",
     "size": "Small",
@@ -818,7 +818,7 @@
       "Playful",
       "Patient"
     ],
-    "price": 1095,
+    "price": 1050,
     "location": "Wichita, KS",
     "state": "Kansas",
     "size": "Small",
@@ -844,7 +844,7 @@
       "Friendly",
       "Gentle"
     ],
-    "price": 1050,
+    "price": 700,
     "location": "Edmond, OK",
     "state": "Oklahoma",
     "size": "Small",
@@ -870,7 +870,7 @@
       "Bright",
       "Playful"
     ],
-    "price": 995,
+    "price": 900,
     "location": "Broken Arrow, OK",
     "state": "Oklahoma",
     "size": "Medium",
@@ -896,7 +896,7 @@
       "Curious",
       "Energetic"
     ],
-    "price": 850,
+    "price": 700,
     "location": "Tulsa, OK",
     "state": "Oklahoma",
     "size": "Medium",
@@ -922,7 +922,7 @@
       "Calm",
       "Steady"
     ],
-    "price": 1395,
+    "price": 1100,
     "location": "Plano, TX",
     "state": "Texas",
     "size": "Medium",
@@ -948,7 +948,7 @@
       "Lively",
       "Curious"
     ],
-    "price": 1050,
+    "price": 825,
     "location": "Baton Rouge, LA",
     "state": "Louisiana",
     "size": "Small-Medium",
@@ -974,7 +974,7 @@
       "Gentle",
       "Bright"
     ],
-    "price": 1095,
+    "price": 825,
     "location": "Lake Charles, LA",
     "state": "Louisiana",
     "size": "Small",
@@ -1000,7 +1000,7 @@
       "Bright",
       "Social"
     ],
-    "price": 1295,
+    "price": 925,
     "location": "Lafayette, LA",
     "state": "Louisiana",
     "size": "Small",
@@ -1026,7 +1026,7 @@
       "Alert",
       "Curious"
     ],
-    "price": 1095,
+    "price": 925,
     "location": "Las Cruces, NM",
     "state": "New Mexico",
     "size": "Small-Medium",
@@ -1052,7 +1052,7 @@
       "Social",
       "Playful"
     ],
-    "price": 1095,
+    "price": 850,
     "location": "Memphis, TN",
     "state": "Tennessee",
     "size": "Small",
@@ -1078,7 +1078,7 @@
       "Affectionate",
       "Gentle"
     ],
-    "price": 1125,
+    "price": 875,
     "location": "Norman, OK",
     "state": "Oklahoma",
     "size": "Small",
@@ -1104,7 +1104,7 @@
       "Bright",
       "Alert"
     ],
-    "price": 995,
+    "price": 900,
     "location": "Midland, TX",
     "state": "Texas",
     "size": "Medium",
@@ -1130,7 +1130,7 @@
       "Affectionate",
       "Alert"
     ],
-    "price": 995,
+    "price": 850,
     "location": "Albuquerque, NM",
     "state": "New Mexico",
     "size": "Small",
@@ -1156,7 +1156,7 @@
       "Playful",
       "Curious"
     ],
-    "price": 895,
+    "price": 675,
     "location": "Fayetteville, AR",
     "state": "Arkansas",
     "size": "Small",
@@ -1182,7 +1182,7 @@
       "Intelligent",
       "Curious"
     ],
-    "price": 995,
+    "price": 800,
     "location": "Tampa, FL",
     "state": "Florida",
     "size": "Large",
@@ -1208,7 +1208,7 @@
       "Gentle",
       "Outgoing"
     ],
-    "price": 850,
+    "price": 750,
     "location": "Odessa, TX",
     "state": "Texas",
     "size": "Medium-Large",
@@ -1234,7 +1234,7 @@
       "Affectionate",
       "Gentle"
     ],
-    "price": 1395,
+    "price": 1100,
     "location": "Jonesboro, AR",
     "state": "Arkansas",
     "size": "Medium-Large",
@@ -1260,7 +1260,7 @@
       "Gentle",
       "Affectionate"
     ],
-    "price": 1495,
+    "price": 1225,
     "location": "Topeka, KS",
     "state": "Kansas",
     "size": "Medium-Large",
@@ -1286,7 +1286,7 @@
       "Playful",
       "Friendly"
     ],
-    "price": 1295,
+    "price": 950,
     "location": "Dallas, TX",
     "state": "Texas",
     "size": "Small",
@@ -1312,7 +1312,7 @@
       "Gentle",
       "Outgoing"
     ],
-    "price": 825,
+    "price": 625,
     "location": "Round Rock, TX",
     "state": "Texas",
     "size": "Small",
@@ -1338,7 +1338,7 @@
       "Outgoing",
       "Charming"
     ],
-    "price": 925,
+    "price": 675,
     "location": "New Orleans, LA",
     "state": "Louisiana",
     "size": "Small",
@@ -1364,7 +1364,7 @@
       "Spunky",
       "Curious"
     ],
-    "price": 875,
+    "price": 650,
     "location": "Jacksonville, FL",
     "state": "Florida",
     "size": "Small",
@@ -1390,7 +1390,7 @@
       "Friendly",
       "Affectionate"
     ],
-    "price": 1395,
+    "price": 1100,
     "location": "Orlando, FL",
     "state": "Florida",
     "size": "Medium",
@@ -1416,7 +1416,7 @@
       "Curious",
       "Confident"
     ],
-    "price": 995,
+    "price": 800,
     "location": "Corpus Christi, TX",
     "state": "Texas",
     "size": "Large",
