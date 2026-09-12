@@ -158,7 +158,35 @@ const orderedPuppies = (() => {
   return [...priority, ...shuffled];
 })();
 
-export const allPuppies: Puppy[] = orderedPuppies.map((p, i) => ({
+const swappedPuppies: Puppy[] = (() => {
+  const arr = [...orderedPuppies];
+  const findIdx = (name: string) => arr.findIndex((p) => p.name === name);
+
+  // Swap 1: Sadie ↔ Theo
+  {
+    const i = findIdx('Sadie');
+    const j = findIdx('Theo');
+    if (i !== -1 && j !== -1) [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+
+  // Swap 2: Sadie's new position ↔ Harper
+  {
+    const i = findIdx('Sadie');
+    const j = findIdx('Harper');
+    if (i !== -1 && j !== -1) [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+
+  // Swap 3: Chuck ↔ Rufus
+  {
+    const i = findIdx('Chuck');
+    const j = findIdx('Rufus');
+    if (i !== -1 && j !== -1) [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+
+  return arr;
+})();
+
+export const allPuppies: Puppy[] = swappedPuppies.map((p, i) => ({
   ...p,
   sortPriority: i < PRIORITY_BREEDS.length ? i : 99,
 }));
