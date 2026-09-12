@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import {
   ArrowLeft,
   Star,
@@ -22,10 +22,12 @@ import {
   whatsappLink,
   WHATSAPP_MESSAGES,
 } from '@/data/puppies';
+import { getGalleryImages } from '@/data/gallery';
 import { puppyDetailLink, homeLink } from '@/hooks/useHashRoute';
 import { Header } from '@/components/Header';
 import { FloatingWhatsApp } from '@/components/FloatingWhatsApp';
 import { Footer } from '@/components/Sections';
+import { cn } from '@/lib/utils';
 
 
 interface Props {
@@ -255,6 +257,7 @@ function buildAboutText(puppy: Puppy, pronoun: string, posPronoun: string): stri
 
 export function PuppyDetail({ puppyId, onNavigate }: Props) {
   const [imgError, setImgError] = useState(false);
+  const [activeImgIdx, setActiveImgIdx] = useState(0);
   const puppy = getPuppyById(puppyId);
 
   if (!puppy) {
@@ -284,8 +287,19 @@ export function PuppyDetail({ puppyId, onNavigate }: Props) {
   const posPronoun = puppy.gender === 'Male' ? 'him' : 'her';
   const aboutText = buildAboutText(puppy, pronoun, posPronoun);
 
+  const galleryImages = useMemo(
+    () => getGalleryImages(puppy.name, puppy.image),
+    [puppy.name, puppy.image],
+  );
+
   const takeHomeLink = whatsappLink(WHATSAPP_MESSAGES.detailTakeHome(puppy.name, puppy.breed, puppy.gender));
   const advisorLink = whatsappLink(WHATSAPP_MESSAGES.detailAdvisor(puppy.name, puppy.breed));
+
+  const statusBadge = !puppy.available
+    ? { text: 'Reserved', cls: 'bg-slate-200 text-slate-600' }
+    : puppy.featured
+      ? { text: 'Featured', cls: 'bg-amber-100 text-amber-800' }
+      : { text: 'Available', cls: 'bg-emerald-100 text-emerald-700' };
 
   return (
     <div className="min-h-screen bg-white">
@@ -309,12 +323,12 @@ export function PuppyDetail({ puppyId, onNavigate }: Props) {
       {/* Top section: image + info */}
       <section className="max-w-5xl mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-8">
-          {/* LEFT: image */}
-          <div className="relative">
+          {/* LEFT: image gallery */}
+          <div className="flex flex-col">
             <div className="rounded-2xl overflow-hidden border border-slate-100 shadow-sm bg-slate-100 aspect-[4/3] w-full">
               {!imgError ? (
                 <img
-                  src={puppy.image}
+                  src={galleryImages[activeImgIdx] ?? puppy.image}
                   alt={`${puppy.breed} puppy named ${puppy.name}`}
                   className="w-full h-full object-cover"
                   onError={() => setImgError(true)}
@@ -325,21 +339,46 @@ export function PuppyDetail({ puppyId, onNavigate }: Props) {
                 </div>
               )}
             </div>
-            {puppy.available && (
-              <span className="absolute top-4 left-4 px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-700">
-                Available Now
-              </span>
+
+            {/* Thumbnails */}
+            {galleryImages.length > 1 && (
+              <div className="mt-3 flex gap-2 sm:gap-3">
+                {galleryImages.map((img, i) => (
+                  <button
+                    key={img}
+                    onClick={() => setActiveImgIdx(i)}
+                    className={cn(
+                      'flex-1 max-w-[120px] aspect-[4/3] rounded-lg overflow-hidden border-2 transition-all',
+                      i === activeImgIdx
+                        ? 'border-emerald-600 ring-2 ring-emerald-600/20'
+                        : 'border-slate-200 hover:border-emerald-400',
+                    )}
+                    aria-label={`View photo ${i + 1}`}
+                    aria-pressed={i === activeImgIdx}
+                  >
+                    <img
+                      src={img}
+                      alt={`${puppy.name} photo ${i + 1}`}
+                      loading="lazy"
+                      className="w-full h-full object-cover"
+                    />
+                  </button>
+                ))}
+              </div>
             )}
-            {/* Mobile-only badges on image */}
-            <div className="flex sm:hidden absolute top-4 right-4 flex-col gap-1.5 items-end">
-              {puppy.featured && (
-                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800">
-                  <Sparkles className="w-3 h-3" />
-                  Featured
-                </span>
-              )}
+
+            {/* Badges below photo */}
+            <div className="mt-4 flex flex-wrap gap-2">
+              <span
+                className={cn(
+                  'inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold',
+                  statusBadge.cls,
+                )}
+              >
+                {statusBadge.text}
+              </span>
               {puppy.championBloodline && (
-                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-slate-900 text-amber-300">
+                <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-slate-900 text-amber-300">
                   <Award className="w-3 h-3" />
                   Champion Bloodline
                 </span>

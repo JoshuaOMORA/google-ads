@@ -83,23 +83,6 @@ export function PuppyCard({ puppy, index, view }: Props) {
           <span className="text-4xl font-bold">{puppy.name[0]}</span>
         </div>
       )}
-      <div className="hidden sm:flex absolute top-3 left-3 flex-col gap-1.5">
-        <span
-          className={cn(
-            'inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold self-start',
-            statusBadge.cls,
-          )}
-        >
-          {statusBadge.icon && <statusBadge.icon className="w-3 h-3" />}
-          {statusBadge.text}
-        </span>
-        {puppy.championBloodline && (
-          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-slate-900 text-amber-300 self-start">
-            <Award className="w-2.5 h-2.5" />
-            Champion Bloodline
-          </span>
-        )}
-      </div>
       <button
         onClick={() => toggle(puppy.id)}
         aria-label={isFav ? 'Remove from favorites' : 'Add to favorites'}
@@ -117,8 +100,8 @@ export function PuppyCard({ puppy, index, view }: Props) {
 
   const contentEl = (
     <div className="p-3 sm:p-4 flex flex-col flex-1 gap-1 sm:gap-1">
-      {/* Mobile badge row — hidden on desktop where badges overlay the image */}
-      <div className="flex sm:hidden flex-wrap gap-1.5 mb-1">
+      {/* Badges below photo */}
+      <div className="flex flex-wrap gap-1.5 mb-1">
         <span
           className={cn(
             'inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold',
