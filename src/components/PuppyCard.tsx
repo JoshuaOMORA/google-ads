@@ -201,7 +201,7 @@ export function PuppyCard({ puppy, index, view }: Props) {
 
   return (
     <div
-      className="flex flex-col bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group overflow-hidden cursor-pointer"
+      className="flex flex-col bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group overflow-hidden cursor-pointer w-full max-w-sm sm:w-full"
       style={animStyle}
       onClick={(e) => {
         const target = e.target as HTMLElement;
