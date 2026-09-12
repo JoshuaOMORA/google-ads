@@ -62,7 +62,7 @@ export function HowItWorks() {
     { num: '04', title: 'Bring Them Home', desc: 'We\'ll discuss delivery or pickup options and the next steps for bringing your puppy home.', icon: Truck },
   ];
   return (
-    <section id="how-it-works" className="py-16 md:py-20 px-4 bg-white">
+    <section id="how-it-works" className="py-16 md:py-20 px-4 bg-white scroll-mt-24">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10 md:mb-14">
           <h2 className="text-2xl md:text-4xl font-bold text-slate-900">
@@ -101,7 +101,7 @@ export function WhyUs() {
     { title: 'Clear & Secure Payments', desc: 'Escrow-protected payments ensure your money is safe until your puppy is in your arms.', icon: Lock },
   ];
   return (
-    <section id="why-us" className="bg-slate-50 py-16 md:py-20 px-4">
+    <section id="why-us" className="bg-slate-50 py-16 md:py-20 px-4 scroll-mt-24">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10 md:mb-14">
           <h2 className="text-2xl md:text-4xl font-bold text-slate-900">
@@ -186,7 +186,7 @@ export function Testimonials() {
   }, [paused, next]);
 
   return (
-    <section id="reviews" className="bg-emerald-50 py-16 md:py-20 px-4">
+    <section id="reviews" className="bg-emerald-50 py-16 md:py-20 px-4 scroll-mt-24">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8 md:mb-10">
           <h2 className="text-2xl md:text-4xl font-bold text-slate-900">

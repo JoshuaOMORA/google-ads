@@ -84,7 +84,7 @@ export function Header() {
             <a
               key={n.href}
               href={n.href}
-              onClick={() => setTimeout(() => setOpen(false), 0)}
+              onClick={() => setOpen(false)}
               className="py-2.5 px-3 rounded-lg text-sm font-medium text-slate-600 hover:bg-emerald-50 hover:text-emerald-600 transition-colors"
             >
               {n.label}

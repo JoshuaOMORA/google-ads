@@ -35,6 +35,18 @@ export function useHashRoute() {
   const routeRef = useRef(route.path);
 
   useEffect(() => {
+    const scrollToSection = (sectionId: string) => {
+      if (!sectionId) {
+        window.scrollTo({ top: 0 });
+        return;
+      }
+      requestAnimationFrame(() => {
+        const el = document.getElementById(sectionId);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        else window.scrollTo({ top: 0 });
+      });
+    };
+
     const onChange = () => {
       const newRoute = parseHash();
       const prevPath = routeRef.current;
@@ -43,17 +55,9 @@ export function useHashRoute() {
 
       if (newRoute.path !== 'home') {
         window.scrollTo({ top: 0 });
-      } else if (prevPath !== 'home') {
+      } else {
         const sectionId = window.location.hash.replace(/^#/, '');
-        if (sectionId) {
-          setTimeout(() => {
-            const el = document.getElementById(sectionId);
-            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            else window.scrollTo({ top: 0 });
-          }, 50);
-        } else {
-          window.scrollTo({ top: 0 });
-        }
+        scrollToSection(sectionId);
       }
     };
     window.addEventListener('hashchange', onChange);
