@@ -54,11 +54,9 @@ export function PuppyCard({ puppy, index, view }: Props) {
   const isFav = favs.includes(puppy.id);
 
   const statusBadge =
-    !puppy.available
-      ? { text: 'Reserved', cls: 'bg-slate-200 text-slate-600', icon: undefined }
-      : puppy.featured
-        ? { text: 'Featured', cls: 'bg-amber-100 text-amber-800', icon: Sparkles }
-        : { text: 'Available', cls: 'bg-emerald-100 text-emerald-700', icon: CircleCheck };
+    puppy.featured
+      ? { text: 'Featured', cls: 'bg-amber-100 text-amber-800', icon: Sparkles }
+      : { text: 'Available', cls: 'bg-emerald-100 text-emerald-700', icon: CircleCheck };
 
   const waLink = whatsappLink(
     WHATSAPP_MESSAGES.perPuppy(puppy.name, puppy.breed, puppy.gender),
@@ -102,19 +100,26 @@ export function PuppyCard({ puppy, index, view }: Props) {
     <div className="p-3 sm:p-4 flex flex-col flex-1 gap-1 sm:gap-1">
       {/* Badges below photo */}
       <div className="flex flex-wrap gap-1.5 mb-1">
-        <span
-          className={cn(
-            'inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold',
-            statusBadge.cls,
-          )}
-        >
-          {statusBadge.icon && <statusBadge.icon className="w-3 h-3" />}
-          {statusBadge.text}
-        </span>
+        {puppy.available && (
+          <span
+            className={cn(
+              'inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold',
+              statusBadge.cls,
+            )}
+          >
+            {statusBadge.icon && <statusBadge.icon className="w-3 h-3" />}
+            {statusBadge.text}
+          </span>
+        )}
         {puppy.championBloodline && (
           <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-slate-900 text-amber-300">
             <Award className="w-3 h-3" />
             Champion Bloodline
+          </span>
+        )}
+        {puppy.reserved && (
+          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-200 text-slate-600">
+            Reserved
           </span>
         )}
       </div>

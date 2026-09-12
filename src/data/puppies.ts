@@ -45,6 +45,7 @@ export interface Puppy {
   color: string;
   available: boolean;
   featured: boolean;
+  reserved: boolean;
   rating: number;
   reviewCount: number;
   description: string;
@@ -71,6 +72,7 @@ type RawEntry = {
   size: string;
   available: boolean;
   featured: boolean;
+  reserved?: boolean;
   rating: number;
   reviewCount: number;
   description: string;
@@ -102,6 +104,7 @@ const mappedPuppies: Puppy[] = (rawData as RawEntry[]).map((r) => ({
   color: 'Various',
   available: r.available,
   featured: r.featured,
+  reserved: r.reserved ?? false,
   rating: r.rating,
   reviewCount: r.reviewCount,
   description: r.description,

@@ -5,7 +5,7 @@
     "breed": "Golden Retriever",
     "gender": "Female",
     "age": "9 weeks",
-    "height": 11.0,
+    "height": 11,
     "weight": 12.4,
     "temperament": [
       "Eager to please",
@@ -22,7 +22,8 @@
     "reviewCount": 51,
     "description": "Lola has a lovely golden retriever personality and would make a wonderful companion for the right home.",
     "image": "/images/puppies/puppy-1.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 2,
@@ -30,7 +31,7 @@
     "breed": "Golden Retriever",
     "gender": "Male",
     "age": "10 weeks",
-    "height": 12.0,
+    "height": 12,
     "weight": 16.1,
     "temperament": [
       "Friendly",
@@ -47,7 +48,8 @@
     "reviewCount": 63,
     "description": "This 10 weeks golden retriever, Archie, is affectionate, curious and ready for a loving forever family.",
     "image": "/images/puppies/puppy-2.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 3,
@@ -72,7 +74,8 @@
     "reviewCount": 29,
     "description": "Jasper has a lovely french bulldog personality and would make a wonderful companion for the right home.",
     "image": "/images/puppies/puppy-3.jpg",
-    "championBloodline": true
+    "championBloodline": true,
+    "reserved": false
   },
   {
     "id": 4,
@@ -80,7 +83,7 @@
     "breed": "French Bulldog",
     "gender": "Female",
     "age": "14 weeks",
-    "height": 9.0,
+    "height": 9,
     "weight": 14.6,
     "temperament": [
       "Playful",
@@ -97,7 +100,8 @@
     "reviewCount": 30,
     "description": "Ellie has a lovely french bulldog personality and would make a wonderful companion for the right home.",
     "image": "/images/puppies/puppy-4.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 5,
@@ -122,7 +126,8 @@
     "reviewCount": 85,
     "description": "Rufus is a sweet 9 weeks german shepherd with a friendly nature and plenty of puppy charm.",
     "image": "/images/puppies/puppy-5.jpg",
-    "championBloodline": true
+    "championBloodline": true,
+    "reserved": false
   },
   {
     "id": 6,
@@ -147,7 +152,8 @@
     "reviewCount": 79,
     "description": "This 15 weeks german shepherd, Nova, is affectionate, curious and ready for a loving forever family.",
     "image": "/images/puppies/puppy-6.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 7,
@@ -155,7 +161,7 @@
     "breed": "Labrador Retriever",
     "gender": "Female",
     "age": "9 weeks",
-    "height": 10.0,
+    "height": 10,
     "weight": 14.3,
     "temperament": [
       "Playful",
@@ -172,7 +178,8 @@
     "reviewCount": 68,
     "description": "Ruby is a charming 9 weeks labrador retriever with a playful personality and a gentle side.",
     "image": "/images/puppies/puppy-7.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 8,
@@ -180,7 +187,7 @@
     "breed": "Labrador Retriever",
     "gender": "Male",
     "age": "11 weeks",
-    "height": 12.0,
+    "height": 12,
     "weight": 20.2,
     "temperament": [
       "Friendly",
@@ -197,7 +204,8 @@
     "reviewCount": 57,
     "description": "Winston has a lovely labrador retriever personality and would make a wonderful companion for the right home.",
     "image": "/images/puppies/puppy-8.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 9,
@@ -205,7 +213,7 @@
     "breed": "Labrador Retriever",
     "gender": "Male",
     "age": "8 weeks",
-    "height": 9.0,
+    "height": 9,
     "weight": 12.6,
     "temperament": [
       "Gentle",
@@ -222,7 +230,8 @@
     "reviewCount": 33,
     "description": "Bear is a charming 8 weeks labrador retriever with a playful personality and a gentle side.",
     "image": "/images/puppies/puppy-9.jpg",
-    "championBloodline": true
+    "championBloodline": true,
+    "reserved": false
   },
   {
     "id": 10,
@@ -230,7 +239,7 @@
     "breed": "Poodle",
     "gender": "Female",
     "age": "8 weeks",
-    "height": 6.0,
+    "height": 6,
     "weight": 7.2,
     "temperament": [
       "Playful",
@@ -247,7 +256,8 @@
     "reviewCount": 58,
     "description": "This 8 weeks poodle, Harper, is affectionate, curious and ready for a loving forever family.",
     "image": "/images/puppies/puppy-10.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": true
   },
   {
     "id": 11,
@@ -255,8 +265,8 @@
     "breed": "Poodle",
     "gender": "Male",
     "age": "13 weeks",
-    "height": 10.0,
-    "weight": 16.0,
+    "height": 10,
+    "weight": 16,
     "temperament": [
       "Quick to learn",
       "Alert",
@@ -272,7 +282,8 @@
     "reviewCount": 83,
     "description": "Otis is a sweet 13 weeks poodle with a friendly nature and plenty of puppy charm.",
     "image": "/images/puppies/puppy-11.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 12,
@@ -297,7 +308,8 @@
     "reviewCount": 87,
     "description": "Sophie is a sweet 12 weeks dachshund with a friendly nature and plenty of puppy charm.",
     "image": "/images/puppies/puppy-12.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 13,
@@ -305,7 +317,7 @@
     "breed": "Dachshund",
     "gender": "Male",
     "age": "14 weeks",
-    "height": 7.0,
+    "height": 7,
     "weight": 10.9,
     "temperament": [
       "Curious",
@@ -322,7 +334,8 @@
     "reviewCount": 42,
     "description": "Benny is a charming 14 weeks dachshund with a playful personality and a gentle side.",
     "image": "/images/puppies/puppy-13.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 14,
@@ -330,8 +343,8 @@
     "breed": "Beagle",
     "gender": "Male",
     "age": "8 weeks",
-    "height": 5.0,
-    "weight": 6.0,
+    "height": 5,
+    "weight": 6,
     "temperament": [
       "Playful",
       "Social",
@@ -347,7 +360,8 @@
     "reviewCount": 76,
     "description": "Theo is a sweet 8 weeks beagle with a friendly nature and plenty of puppy charm.",
     "image": "/images/puppies/puppy-14.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 15,
@@ -355,7 +369,7 @@
     "breed": "Beagle",
     "gender": "Female",
     "age": "8 weeks",
-    "height": 5.0,
+    "height": 5,
     "weight": 5.6,
     "temperament": [
       "Friendly",
@@ -372,7 +386,8 @@
     "reviewCount": 42,
     "description": "Sadie is a sweet 8 weeks beagle with a friendly nature and plenty of puppy charm.",
     "image": "/images/puppies/puppy-15.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 16,
@@ -397,7 +412,8 @@
     "reviewCount": 63,
     "description": "Bentley is a sweet 10 weeks siberian husky with a friendly nature and plenty of puppy charm.",
     "image": "/images/puppies/puppy-16.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 17,
@@ -422,7 +438,8 @@
     "reviewCount": 90,
     "description": "This 10 weeks siberian husky, Millie, is affectionate, curious and ready for a loving forever family.",
     "image": "/images/puppies/puppy-17.jpg",
-    "championBloodline": true
+    "championBloodline": true,
+    "reserved": true
   },
   {
     "id": 18,
@@ -430,8 +447,8 @@
     "breed": "Yorkshire Terrier",
     "gender": "Female",
     "age": "15 weeks",
-    "height": 5.0,
-    "weight": 6.0,
+    "height": 5,
+    "weight": 6,
     "temperament": [
       "Lively",
       "Bold",
@@ -447,7 +464,8 @@
     "reviewCount": 36,
     "description": "Winnie has a lovely yorkshire terrier personality and would make a wonderful companion for the right home.",
     "image": "/images/puppies/puppy-18.jpg",
-    "championBloodline": true
+    "championBloodline": true,
+    "reserved": false
   },
   {
     "id": 19,
@@ -455,7 +473,7 @@
     "breed": "Boxer",
     "gender": "Male",
     "age": "8 weeks",
-    "height": 8.0,
+    "height": 8,
     "weight": 12.1,
     "temperament": [
       "Bright",
@@ -472,7 +490,8 @@
     "reviewCount": 89,
     "description": "Oakley is a sweet 8 weeks boxer with a friendly nature and plenty of puppy charm.",
     "image": "/images/puppies/puppy-19.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 20,
@@ -497,7 +516,8 @@
     "reviewCount": 95,
     "description": "Molly has a lovely boxer personality and would make a wonderful companion for the right home.",
     "image": "/images/puppies/puppy-20.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 21,
@@ -505,8 +525,8 @@
     "breed": "Cavalier King Charles Spaniel",
     "gender": "Male",
     "age": "10 weeks",
-    "height": 6.0,
-    "weight": 7.0,
+    "height": 6,
+    "weight": 7,
     "temperament": [
       "Affectionate",
       "Patient",
@@ -522,7 +542,8 @@
     "reviewCount": 47,
     "description": "Remy has a lovely cavalier king charles spaniel personality and would make a wonderful companion for the right home.",
     "image": "/images/puppies/puppy-21.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 22,
@@ -530,7 +551,7 @@
     "breed": "Cavalier King Charles Spaniel",
     "gender": "Female",
     "age": "11 weeks",
-    "height": 6.0,
+    "height": 6,
     "weight": 8.3,
     "temperament": [
       "Affectionate",
@@ -543,11 +564,12 @@
     "size": "Small",
     "available": true,
     "featured": false,
-    "rating": 4.0,
+    "rating": 4,
     "reviewCount": 84,
     "description": "Maisie has a lovely cavalier king charles spaniel personality and would make a wonderful companion for the right home.",
     "image": "/images/puppies/puppy-22.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 23,
@@ -572,7 +594,8 @@
     "reviewCount": 23,
     "description": "Piper is a sweet 9 weeks australian shepherd with a friendly nature and plenty of puppy charm.",
     "image": "/images/puppies/puppy-23.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 24,
@@ -580,7 +603,7 @@
     "breed": "Australian Shepherd",
     "gender": "Male",
     "age": "9 weeks",
-    "height": 9.0,
+    "height": 9,
     "weight": 12.6,
     "temperament": [
       "Alert",
@@ -597,7 +620,8 @@
     "reviewCount": 71,
     "description": "Leo is a sweet 9 weeks australian shepherd with a friendly nature and plenty of puppy charm.",
     "image": "/images/puppies/puppy-24.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": true
   },
   {
     "id": 25,
@@ -605,7 +629,7 @@
     "breed": "Shiba Inu",
     "gender": "Male",
     "age": "8 weeks",
-    "height": 6.0,
+    "height": 6,
     "weight": 6.8,
     "temperament": [
       "Lively",
@@ -622,7 +646,8 @@
     "reviewCount": 42,
     "description": "This 8 weeks shiba inu, Max, is affectionate, curious and ready for a loving forever family.",
     "image": "/images/puppies/puppy-25.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 26,
@@ -647,7 +672,8 @@
     "reviewCount": 96,
     "description": "Penny has a lovely shiba inu personality and would make a wonderful companion for the right home.",
     "image": "/images/puppies/puppy-26.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 27,
@@ -655,7 +681,7 @@
     "breed": "Great Dane",
     "gender": "Male",
     "age": "10 weeks",
-    "height": 14.0,
+    "height": 14,
     "weight": 35.2,
     "temperament": [
       "Devoted",
@@ -672,7 +698,8 @@
     "reviewCount": 65,
     "description": "This 10 weeks great dane, Gus, is affectionate, curious and ready for a loving forever family.",
     "image": "/images/puppies/puppy-27.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 28,
@@ -680,7 +707,7 @@
     "breed": "Great Dane",
     "gender": "Female",
     "age": "11 weeks",
-    "height": 15.0,
+    "height": 15,
     "weight": 34.6,
     "temperament": [
       "Patient",
@@ -697,7 +724,8 @@
     "reviewCount": 33,
     "description": "Chloe is a sweet 11 weeks great dane with a friendly nature and plenty of puppy charm.",
     "image": "/images/puppies/puppy-28.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 29,
@@ -705,7 +733,7 @@
     "breed": "Pembroke Welsh Corgi",
     "gender": "Female",
     "age": "13 weeks",
-    "height": 7.0,
+    "height": 7,
     "weight": 13.1,
     "temperament": [
       "Bold",
@@ -722,7 +750,8 @@
     "reviewCount": 32,
     "description": "This 13 weeks pembroke welsh corgi, Stella, is affectionate, curious and ready for a loving forever family.",
     "image": "/images/puppies/puppy-29.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 30,
@@ -747,7 +776,8 @@
     "reviewCount": 35,
     "description": "Tucker is a sweet 13 weeks pembroke welsh corgi with a friendly nature and plenty of puppy charm.",
     "image": "/images/puppies/puppy-30.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 31,
@@ -772,7 +802,8 @@
     "reviewCount": 40,
     "description": "Ivy is a charming 11 weeks french bulldog with a playful personality and a gentle side.",
     "image": "/images/puppies/puppy-31.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": true
   },
   {
     "id": 32,
@@ -797,7 +828,8 @@
     "reviewCount": 61,
     "description": "Louie is a charming 13 weeks cavalier king charles spaniel with a playful personality and a gentle side.",
     "image": "/images/puppies/puppy-32.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 33,
@@ -805,7 +837,7 @@
     "breed": "Bichon Frise",
     "gender": "Female",
     "age": "15 weeks",
-    "height": 7.0,
+    "height": 7,
     "weight": 9.4,
     "temperament": [
       "Affectionate",
@@ -822,7 +854,8 @@
     "reviewCount": 35,
     "description": "Gracie is a charming 15 weeks bichon frise with a playful personality and a gentle side.",
     "image": "/images/puppies/puppy-33.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 34,
@@ -830,7 +863,7 @@
     "breed": "Poodle",
     "gender": "Male",
     "age": "9 weeks",
-    "height": 7.0,
+    "height": 7,
     "weight": 9.5,
     "temperament": [
       "Quick to learn",
@@ -847,7 +880,8 @@
     "reviewCount": 85,
     "description": "Cody is a sweet 9 weeks poodle with a friendly nature and plenty of puppy charm.",
     "image": "/images/puppies/puppy-34.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 35,
@@ -855,7 +889,7 @@
     "breed": "Siberian Husky",
     "gender": "Male",
     "age": "9 weeks",
-    "height": 9.0,
+    "height": 9,
     "weight": 13.3,
     "temperament": [
       "Independent",
@@ -872,7 +906,8 @@
     "reviewCount": 68,
     "description": "Cash has a lovely siberian husky personality and would make a wonderful companion for the right home.",
     "image": "/images/puppies/puppy-35.jpg",
-    "championBloodline": true
+    "championBloodline": true,
+    "reserved": false
   },
   {
     "id": 36,
@@ -880,7 +915,7 @@
     "breed": "Bulldog",
     "gender": "Male",
     "age": "8 weeks",
-    "height": 6.0,
+    "height": 6,
     "weight": 9.8,
     "temperament": [
       "Affectionate",
@@ -897,7 +932,8 @@
     "reviewCount": 92,
     "description": "This 8 weeks bulldog, Harley, is affectionate, curious and ready for a loving forever family.",
     "image": "/images/puppies/puppy-36.jpg",
-    "championBloodline": true
+    "championBloodline": true,
+    "reserved": false
   },
   {
     "id": 37,
@@ -905,7 +941,7 @@
     "breed": "Shiba Inu",
     "gender": "Male",
     "age": "12 weeks",
-    "height": 8.0,
+    "height": 8,
     "weight": 13.8,
     "temperament": [
       "Independent",
@@ -922,7 +958,8 @@
     "reviewCount": 47,
     "description": "Bruno is a sweet 12 weeks shiba inu with a friendly nature and plenty of puppy charm.",
     "image": "/images/puppies/puppy-37.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 38,
@@ -930,7 +967,7 @@
     "breed": "Maltipoo",
     "gender": "Male",
     "age": "15 weeks",
-    "height": 7.0,
+    "height": 7,
     "weight": 11.1,
     "temperament": [
       "Social",
@@ -947,7 +984,8 @@
     "reviewCount": 26,
     "description": "Charlie has a lovely maltipoo personality and would make a wonderful companion for the right home.",
     "image": "/images/puppies/puppy-38.jpg",
-    "championBloodline": true
+    "championBloodline": true,
+    "reserved": false
   },
   {
     "id": 39,
@@ -955,7 +993,7 @@
     "breed": "Maltipoo",
     "gender": "Female",
     "age": "8 weeks",
-    "height": 4.0,
+    "height": 4,
     "weight": 3.7,
     "temperament": [
       "Gentle",
@@ -972,7 +1010,8 @@
     "reviewCount": 40,
     "description": "Bella is a charming 8 weeks maltipoo with a playful personality and a gentle side.",
     "image": "/images/puppies/puppy-39.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 40,
@@ -980,7 +1019,7 @@
     "breed": "Pomsky",
     "gender": "Female",
     "age": "14 weeks",
-    "height": 8.0,
+    "height": 8,
     "weight": 15.4,
     "temperament": [
       "Friendly",
@@ -997,7 +1036,8 @@
     "reviewCount": 57,
     "description": "Willow is a charming 14 weeks pomsky with a playful personality and a gentle side.",
     "image": "/images/puppies/puppy-40.jpg",
-    "championBloodline": true
+    "championBloodline": true,
+    "reserved": false
   },
   {
     "id": 41,
@@ -1005,8 +1045,8 @@
     "breed": "Havanese",
     "gender": "Male",
     "age": "10 weeks",
-    "height": 5.0,
-    "weight": 6.0,
+    "height": 5,
+    "weight": 6,
     "temperament": [
       "Affectionate",
       "Social",
@@ -1022,7 +1062,8 @@
     "reviewCount": 29,
     "description": "This 10 weeks havanese, Finn, is affectionate, curious and ready for a loving forever family.",
     "image": "/images/puppies/puppy-41.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 42,
@@ -1047,7 +1088,8 @@
     "reviewCount": 90,
     "description": "Luna is a charming 9 weeks havanese with a playful personality and a gentle side.",
     "image": "/images/puppies/puppy-42.jpg",
-    "championBloodline": true
+    "championBloodline": true,
+    "reserved": true
   },
   {
     "id": 43,
@@ -1072,7 +1114,8 @@
     "reviewCount": 42,
     "description": "Cooper is a charming 8 weeks poodle with a playful personality and a gentle side.",
     "image": "/images/puppies/puppy-43.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 44,
@@ -1080,7 +1123,7 @@
     "breed": "Pomeranian",
     "gender": "Female",
     "age": "12 weeks",
-    "height": 5.0,
+    "height": 5,
     "weight": 5.4,
     "temperament": [
       "Confident",
@@ -1097,7 +1140,8 @@
     "reviewCount": 54,
     "description": "This 12 weeks pomeranian, Coco, is affectionate, curious and ready for a loving forever family.",
     "image": "/images/puppies/puppy-44.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 45,
@@ -1105,8 +1149,8 @@
     "breed": "Dachshund",
     "gender": "Female",
     "age": "10 weeks",
-    "height": 5.0,
-    "weight": 6.0,
+    "height": 5,
+    "weight": 6,
     "temperament": [
       "Devoted",
       "Playful",
@@ -1122,7 +1166,8 @@
     "reviewCount": 37,
     "description": "Hazel has a lovely dachshund personality and would make a wonderful companion for the right home.",
     "image": "/images/puppies/puppy-45.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 46,
@@ -1147,7 +1192,8 @@
     "reviewCount": 75,
     "description": "Duke is a sweet 10 weeks german shepherd with a friendly nature and plenty of puppy charm.",
     "image": "/images/puppies/puppy-46.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 47,
@@ -1155,7 +1201,7 @@
     "breed": "Labrador Retriever",
     "gender": "Male",
     "age": "8 weeks",
-    "height": 9.0,
+    "height": 9,
     "weight": 12.4,
     "temperament": [
       "Friendly",
@@ -1172,7 +1218,8 @@
     "reviewCount": 54,
     "description": "Milo is a sweet 8 weeks labrador retriever with a friendly nature and plenty of puppy charm.",
     "image": "/images/puppies/puppy-47.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 48,
@@ -1180,7 +1227,7 @@
     "breed": "Goldendoodle",
     "gender": "Male",
     "age": "8 weeks",
-    "height": 9.0,
+    "height": 9,
     "weight": 12.9,
     "temperament": [
       "Friendly",
@@ -1197,7 +1244,8 @@
     "reviewCount": 96,
     "description": "Scout has a lovely goldendoodle personality and would make a wonderful companion for the right home.",
     "image": "/images/puppies/puppy-48.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 49,
@@ -1206,7 +1254,7 @@
     "gender": "Female",
     "age": "10 weeks",
     "height": 12.5,
-    "weight": 23.0,
+    "weight": 23,
     "temperament": [
       "Smart",
       "Gentle",
@@ -1222,7 +1270,8 @@
     "reviewCount": 75,
     "description": "Zoey is a sweet 10 weeks bernedoodle with a friendly nature and plenty of puppy charm.",
     "image": "/images/puppies/puppy-49.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 50,
@@ -1230,7 +1279,7 @@
     "breed": "Cavapoo",
     "gender": "Male",
     "age": "8 weeks",
-    "height": 4.0,
+    "height": 4,
     "weight": 4.3,
     "temperament": [
       "Curious",
@@ -1247,7 +1296,8 @@
     "reviewCount": 39,
     "description": "This 8 weeks cavapoo, Teddy, is affectionate, curious and ready for a loving forever family.",
     "image": "/images/puppies/puppy-50.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 51,
@@ -1272,7 +1322,8 @@
     "reviewCount": 51,
     "description": "Rosie has a lovely shih tzu personality and would make a wonderful companion for the right home.",
     "image": "/images/puppies/puppy-51.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 52,
@@ -1297,7 +1348,8 @@
     "reviewCount": 38,
     "description": "Brody is a sweet 11 weeks shih tzu with a friendly nature and plenty of puppy charm.",
     "image": "/images/puppies/puppy-52.jpg",
-    "championBloodline": true
+    "championBloodline": true,
+    "reserved": false
   },
   {
     "id": 53,
@@ -1305,7 +1357,7 @@
     "breed": "Dachshund",
     "gender": "Female",
     "age": "12 weeks",
-    "height": 6.0,
+    "height": 6,
     "weight": 7.6,
     "temperament": [
       "Devoted",
@@ -1322,7 +1374,8 @@
     "reviewCount": 95,
     "description": "Maggie is a charming 12 weeks dachshund with a playful personality and a gentle side.",
     "image": "/images/puppies/puppy-53.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 54,
@@ -1347,7 +1400,8 @@
     "reviewCount": 34,
     "description": "This 11 weeks bulldog, Mia, is affectionate, curious and ready for a loving forever family.",
     "image": "/images/puppies/puppy-54.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   },
   {
     "id": 55,
@@ -1355,7 +1409,7 @@
     "breed": "German Shepherd",
     "gender": "Male",
     "age": "8 weeks",
-    "height": 9.0,
+    "height": 9,
     "weight": 14.4,
     "temperament": [
       "Intelligent",
@@ -1372,6 +1426,7 @@
     "reviewCount": 40,
     "description": "This 8 weeks german shepherd, Chuck, is affectionate, curious and ready for a loving forever family.",
     "image": "/images/puppies/puppy-55.jpg",
-    "championBloodline": false
+    "championBloodline": false,
+    "reserved": false
   }
 ]

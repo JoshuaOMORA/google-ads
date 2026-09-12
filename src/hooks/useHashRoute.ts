@@ -18,6 +18,14 @@ const INFO_PAGES = new Set([
   'privacy-policy',
 ]);
 
+function isRouteHash(hash: string): boolean {
+  const clean = hash.replace(/^#/, '');
+  const parts = clean.split('/').filter(Boolean);
+  if (parts.length >= 2 && parts[0] === 'puppies') return true;
+  if (parts.length >= 2 && parts[0] === 'page' && parts[1] !== undefined && INFO_PAGES.has(parts[1])) return true;
+  return false;
+}
+
 function parseHash(): RouteState {
   const hash = window.location.hash.replace(/^#/, '');
   const parts = hash.split('/').filter(Boolean);
@@ -35,6 +43,7 @@ export function useHashRoute() {
 
   useEffect(() => {
     const onChange = () => {
+      if (!isRouteHash(window.location.hash)) return;
       setRoute(parseHash());
       window.scrollTo({ top: 0 });
     };
