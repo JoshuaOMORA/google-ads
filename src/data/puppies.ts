@@ -158,10 +158,25 @@ const orderedPuppies = (() => {
   return [...priority, ...shuffled];
 })();
 
-export const allPuppies: Puppy[] = orderedPuppies.map((p, i) => ({
+const withPriority: Puppy[] = orderedPuppies.map((p, i) => ({
   ...p,
   sortPriority: i < PRIORITY_BREEDS.length ? i : 99,
 }));
+
+function swapByName(arr: Puppy[], nameA: string, nameB: string): void {
+  const idxA = arr.findIndex((p) => p.name === nameA);
+  const idxB = arr.findIndex((p) => p.name === nameB);
+  if (idxA !== -1 && idxB !== -1) {
+    [arr[idxA], arr[idxB]] = [arr[idxB], arr[idxA]];
+  }
+}
+
+const swappedPuppies = [...withPriority];
+swapByName(swappedPuppies, 'Sadie', 'Theo');
+swapByName(swappedPuppies, 'Sadie', 'Harper');
+swapByName(swappedPuppies, 'Chuck', 'Rufus');
+
+export const allPuppies: Puppy[] = swappedPuppies;
 
 export const breeds = Array.from(new Set(allPuppies.map((p) => p.breed))).sort();
 export const sizes: string[] = Array.from(
