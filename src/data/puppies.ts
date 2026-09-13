@@ -23,6 +23,8 @@ export const WHATSAPP_MESSAGES = {
     `Hi! I'm interested in ${name}, the ${breed}. Is ${gender === 'Male' ? 'he' : 'she'} still available? I'd like to learn more about taking ${gender === 'Male' ? 'him' : 'her'} home.`,
   detailAdvisor: (name: string, breed: string) =>
     `Hi! I'm viewing ${name}, the ${breed}, and I'd like to learn about availability, delivery options, and next steps for bringing this puppy home.`,
+  detailReservedInquire: (name: string, gender: 'Male' | 'Female') =>
+    `Hi, I'm interested in ${name}, but I see that ${gender === 'Male' ? 'he' : 'she'} is currently reserved. I wanted to ask if you have any similar puppies available or coming available soon.`,
   coverageReal: (state: string) =>
     `Hi, I'm looking for a puppy in or near ${state}. I didn't find quite what I was looking for in the online listings and wanted to ask if you have any additional puppies available nearby.`,
   coverageNearby: (state: string) =>
