@@ -292,12 +292,17 @@ export function PuppyDetail({ puppyId, onNavigate }: Props) {
     [puppy.name, puppy.image],
   );
 
-  const takeHomeLink = whatsappLink(WHATSAPP_MESSAGES.detailTakeHome(puppy.name, puppy.breed, puppy.gender));
+  const takeHomeLink = puppy.reserved
+    ? whatsappLink(WHATSAPP_MESSAGES.detailReservedInquire(puppy.name, puppy.gender))
+    : whatsappLink(WHATSAPP_MESSAGES.detailTakeHome(puppy.name, puppy.breed, puppy.gender));
   const advisorLink = whatsappLink(WHATSAPP_MESSAGES.detailAdvisor(puppy.name, puppy.breed));
 
   const statusBadge = puppy.featured
     ? { text: 'Featured', cls: 'bg-amber-100 text-amber-800' }
     : { text: 'Available', cls: 'bg-emerald-100 text-emerald-700' };
+
+  const mainButtonText = puppy.reserved ? 'Inquire' : 'Take Me Home';
+  const mainButtonIcon = puppy.reserved ? MessageCircle : Heart;
 
   return (
     <div className="min-h-screen bg-white">
@@ -363,25 +368,31 @@ export function PuppyDetail({ puppyId, onNavigate }: Props) {
 
             {/* Badges below photo */}
             <div className="mt-4 flex flex-wrap gap-2">
-              {puppy.available && (
+              {puppy.featured && (
+                <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800">
+                  <Sparkles className="w-3 h-3" />
+                  Featured
+                </span>
+              )}
+              {!puppy.reserved && puppy.available && (
                 <span
                   className={cn(
                     'inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold',
                     statusBadge.cls,
                   )}
                 >
-                  {statusBadge.text}
+                  Available
+                </span>
+              )}
+              {puppy.reserved && (
+                <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-slate-200 text-slate-600">
+                  Reserved
                 </span>
               )}
               {puppy.championBloodline && (
                 <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-slate-900 text-amber-300">
                   <Award className="w-3 h-3" />
                   Champion Bloodline
-                </span>
-              )}
-              {puppy.reserved && (
-                <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-slate-200 text-slate-600">
-                  Reserved
                 </span>
               )}
             </div>
@@ -429,8 +440,12 @@ export function PuppyDetail({ puppyId, onNavigate }: Props) {
                 rel="noopener noreferrer"
                 className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 text-white font-bold hover:bg-emerald-700 transition-colors"
               >
-                <Heart className="w-5 h-5" />
-                Take Me Home
+                {mainButtonIcon === Heart ? (
+                  <Heart className="w-5 h-5" />
+                ) : (
+                  <MessageCircle className="w-5 h-5" />
+                )}
+                {mainButtonText}
               </a>
               <a
                 href={takeHomeLink}
