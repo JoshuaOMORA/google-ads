@@ -58,9 +58,15 @@ export function PuppyCard({ puppy, index, view }: Props) {
       ? { text: 'Featured', cls: 'bg-amber-100 text-amber-800', icon: Sparkles }
       : { text: 'Available', cls: 'bg-emerald-100 text-emerald-700', icon: CircleCheck };
 
-  const waLink = whatsappLink(
-    WHATSAPP_MESSAGES.perPuppy(puppy.name, puppy.breed, puppy.gender),
-  );
+  const waLink = puppy.reserved
+    ? whatsappLink(
+        WHATSAPP_MESSAGES.detailReservedInquire(puppy.name, puppy.gender),
+      )
+    : whatsappLink(
+        WHATSAPP_MESSAGES.perPuppy(puppy.name, puppy.breed, puppy.gender),
+      );
+
+  const buttonText = puppy.reserved ? 'Inquire' : 'Chat';
 
   const animStyle = {
     animation: `cardIn 0.5s ease-out ${index * 80}ms both`,
@@ -100,7 +106,13 @@ export function PuppyCard({ puppy, index, view }: Props) {
     <div className="p-3 sm:p-4 flex flex-col flex-1 gap-1 sm:gap-1">
       {/* Badges below photo */}
       <div className="flex flex-wrap gap-1.5 mb-1">
-        {puppy.available && (
+        {puppy.featured && (
+          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800">
+            <Sparkles className="w-3 h-3" />
+            Featured
+          </span>
+        )}
+        {!puppy.reserved && puppy.available && (
           <span
             className={cn(
               'inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold',
@@ -108,18 +120,18 @@ export function PuppyCard({ puppy, index, view }: Props) {
             )}
           >
             {statusBadge.icon && <statusBadge.icon className="w-3 h-3" />}
-            {statusBadge.text}
+            Available
+          </span>
+        )}
+        {puppy.reserved && (
+          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-200 text-slate-600">
+            Reserved
           </span>
         )}
         {puppy.championBloodline && (
           <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-slate-900 text-amber-300">
             <Award className="w-3 h-3" />
             Champion Bloodline
-          </span>
-        )}
-        {puppy.reserved && (
-          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-200 text-slate-600">
-            Reserved
           </span>
         )}
       </div>
@@ -171,10 +183,10 @@ export function PuppyCard({ puppy, index, view }: Props) {
           href={waLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 sm:gap-2 px-4 sm:px-4 py-2 sm:py-2 rounded-lg bg-emerald-600 text-white text-sm sm:text-sm font-semibold hover:bg-emerald-700 transition-colors shrink-0"
+          className="inline-flex items-center gap-1.5 sm:gap-2 px-4 sm:px-4 py-2 sm:py-2 rounded-lg bg-emerald-600 text-white text-sm sm:text-sm font-semibold hover:bg-emerald-700 transition-colors"
         >
           <MessageCircle className="w-4 h-4 sm:w-4 sm:h-4" />
-          Chat
+          {buttonText}
         </a>
       </div>
     </div>
