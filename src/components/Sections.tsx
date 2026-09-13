@@ -493,6 +493,7 @@ export function Footer() {
       links: [
         { label: 'Contact Us', href: pageLink('contact') },
         { label: 'WhatsApp Support', href: whatsappLink(WHATSAPP_MESSAGES.general), external: true },
+        { label: 'Email Us', href: `mailto:${BUSINESS_EMAIL}` },
         { label: 'Privacy Policy', href: pageLink('privacy-policy') },
       ],
     },

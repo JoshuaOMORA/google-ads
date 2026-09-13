@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronDown, ArrowLeft, MessageCircle } from 'lucide-react';
+import { ChevronDown, ArrowLeft, MessageCircle, Mail } from 'lucide-react';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Sections';
 import { FloatingWhatsApp } from '@/components/FloatingWhatsApp';
@@ -65,9 +65,18 @@ export function InfoPage({ slug }: { slug: string }) {
                       {...(s.cta.external
                         ? { target: '_blank', rel: 'noopener noreferrer' }
                         : {})}
-                      className="mt-4 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 text-white text-sm font-semibold hover:bg-emerald-700 transition-colors"
+                      className={cn(
+                        'mt-4 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-colors',
+                        s.cta.href.startsWith('mailto:')
+                          ? 'border border-slate-200 text-slate-700 hover:bg-slate-50'
+                          : 'bg-emerald-600 text-white hover:bg-emerald-700',
+                      )}
                     >
-                      <MessageCircle className="w-4 h-4" />
+                      {s.cta.href.startsWith('mailto:') ? (
+                        <Mail className="w-4 h-4" />
+                      ) : (
+                        <MessageCircle className="w-4 h-4" />
+                      )}
                       {s.cta.label}
                     </a>
                   )}

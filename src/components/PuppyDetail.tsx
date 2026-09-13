@@ -14,6 +14,7 @@ import {
   ShieldCheck,
   Award,
   Sparkles,
+  Mail,
 } from 'lucide-react';
 import {
   Puppy,
@@ -28,6 +29,7 @@ import { Header } from '@/components/Header';
 import { FloatingWhatsApp } from '@/components/FloatingWhatsApp';
 import { Footer } from '@/components/Sections';
 import { cn } from '@/lib/utils';
+import { BUSINESS_EMAIL } from '@/config';
 
 
 interface Props {
@@ -462,6 +464,14 @@ export function PuppyDetail({ puppyId, onNavigate }: Props) {
               <ShieldCheck className="w-4 h-4 text-emerald-600" />
               Health-checked · Verified breeder · Safe delivery available
             </div>
+
+            <a
+              href={`mailto:${BUSINESS_EMAIL}?subject=${encodeURIComponent(`Inquiry about ${puppy.name} (${puppy.breed})`)}`}
+              className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-slate-500 hover:text-emerald-600 transition-colors"
+            >
+              <Mail className="w-4 h-4" />
+              or email us about {puppy.name}
+            </a>
           </div>
         </div>
       </section>

@@ -1,7 +1,10 @@
 import { useState } from 'react';
-import { Menu, X, MessageCircle } from 'lucide-react';
+import { Menu, X, MessageCircle, Mail } from 'lucide-react';
 import { whatsappLink, WHATSAPP_MESSAGES } from '@/data/puppies';
+import { BUSINESS_EMAIL } from '@/config';
 import { cn } from '@/lib/utils';
+
+export const MAILTO_LINK = `mailto:${BUSINESS_EMAIL}`;
 
 const NAV = [
   { label: 'Available puppies', href: '#available-puppies' },
@@ -50,7 +53,14 @@ export function Header() {
             ))}
           </nav>
 
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-2">
+            <a
+              href={MAILTO_LINK}
+              className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg border border-slate-200 text-slate-700 text-sm font-medium hover:bg-slate-50 transition-colors"
+            >
+              <Mail className="w-4 h-4" />
+              Email Us
+            </a>
             <a
               href={whatsappLink(WHATSAPP_MESSAGES.general)}
               target="_blank"
@@ -90,6 +100,14 @@ export function Header() {
               {n.label}
             </a>
           ))}
+          <a
+            href={MAILTO_LINK}
+            onClick={() => setOpen(false)}
+            className="mt-2 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-slate-200 text-slate-700 text-sm font-semibold"
+          >
+            <Mail className="w-4 h-4" />
+            Email Us
+          </a>
           <a
             href={whatsappLink(WHATSAPP_MESSAGES.general)}
             target="_blank"

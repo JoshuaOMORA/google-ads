@@ -327,6 +327,10 @@ export const INFO_PAGES: Record<string, InfoPageData> = {
       {
         heading: 'Email',
         body: `You can also email us at ${BUSINESS_EMAIL}. We'll get back to you as soon as we can.`,
+        cta: {
+          label: 'Email Us',
+          href: `mailto:${BUSINESS_EMAIL}`,
+        },
       },
     ],
   },

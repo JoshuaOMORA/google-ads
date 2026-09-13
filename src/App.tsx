@@ -13,6 +13,7 @@ import {
   SlidersHorizontal,
   X,
   MapPin,
+  Mail,
 } from 'lucide-react';
 import { Header } from '@/components/Header';
 import { PuppyCard } from '@/components/PuppyCard';
@@ -33,6 +34,7 @@ import {
   REAL_STATE_SET,
 } from '@/components/Sections';
 import { allPuppies, whatsappLink, WHATSAPP_MESSAGES } from '@/data/puppies';
+import { BUSINESS_EMAIL } from '@/config';
 import type { FilterState } from '@/types';
 import { defaultFilters, AGE_RANGES } from '@/types';
 import { useHashRoute } from '@/hooks/useHashRoute';
@@ -228,6 +230,13 @@ function HomePage({ onNavigate }: { onNavigate: (path: string) => void }) {
               >
                 <Search className="w-5 h-5" />
                 Browse available puppies
+              </a>
+              <a
+                href={`mailto:${BUSINESS_EMAIL}`}
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-slate-500 text-sm font-medium hover:text-emerald-600 transition-colors"
+              >
+                <Mail className="w-4 h-4" />
+                or email us
               </a>
             </div>
             <div className="mt-8 flex flex-wrap gap-4 sm:gap-6">
