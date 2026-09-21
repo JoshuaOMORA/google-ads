@@ -9,27 +9,32 @@
       gtag('js', new Date());
       gtag('config', 'G-W4Q9C2C8YN');
     </script>
+    <!-- CTA tracking -->
     <script>
-      document.addEventListener('click', function(event) {
-        const link = event.target.closest('a');
+      document.addEventListener('click', function (event) {
+        const target = event.target;
+    
+        if (!(target instanceof Element)) return;
+    
+        const link = target.closest('a');
     
         if (!link) return;
     
-        const href = link.href || '';
+        const href = link.getAttribute('href') || '';
         const text = link.innerText.trim();
     
         if (href.includes('wa.me') || href.includes('whatsapp.com')) {
           gtag('event', 'whatsapp_click', {
-            event_category: 'engagement',
-            event_label: text || 'WhatsApp CTA',
+            cta_type: 'whatsapp',
+            cta_text: text || 'WhatsApp CTA',
             page_location: window.location.href
           });
         }
     
         if (href.startsWith('mailto:')) {
           gtag('event', 'email_click', {
-            event_category: 'engagement',
-            event_label: text || 'Email CTA',
+            cta_type: 'email',
+            cta_text: text || 'Email CTA',
             page_location: window.location.href
           });
         }
