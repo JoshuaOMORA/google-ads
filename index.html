@@ -1,41 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W4Q9C2C8YN"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-W4Q9C2C8YN');
-    </script>
-    <script>
-    document.addEventListener('click', function(e) {
-      // Finds the anchor link, even if the user clicks an icon or text inside the button
-      var link = e.target.closest('a');
-      if (!link) return;
-    
-      var href = link.getAttribute('href') || '';
-    
-      // Matches ALL WhatsApp links (regardless of phone number, text message, or hash)
-      if (href.includes('wa.me') || href.includes('api.whatsapp.com') || href.includes('whatsapp://') || href.includes('#whatsapp')) {
-        gtag('event', 'generate_lead', {
-          'event_category': 'Contact',
-          'event_label': 'WhatsApp Click',
-          'link_url': href
-        });
-      }
-    
-      // Matches ALL Email links (regardless of email address)
-      if (href.startsWith('mailto:') || href.includes('#email')) {
-        gtag('event', 'generate_lead', {
-          'event_category': 'Contact',
-          'event_label': 'Email Click',
-          'link_url': href
-        });
-      }
-    });
-    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KGHR73JS');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/images/cloverwood-pups-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -45,6 +17,10 @@
     <meta name="twitter:image" content="https://cloverwoodpups.com/images/cloverwood-pups-logo.png" />
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGHR73JS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
