@@ -9,36 +9,32 @@
       gtag('js', new Date());
       gtag('config', 'G-W4Q9C2C8YN');
     </script>
-    <!-- CTA tracking -->
     <script>
-      document.addEventListener('click', function (event) {
-        const target = event.target;
+    document.addEventListener('click', function(e) {
+      // Finds the anchor link, even if the user clicks an icon or text inside the button
+      var link = e.target.closest('a');
+      if (!link) return;
     
-        if (!(target instanceof Element)) return;
+      var href = link.getAttribute('href') || '';
     
-        const link = target.closest('a');
+      // Matches ALL WhatsApp links (regardless of phone number, text message, or hash)
+      if (href.includes('wa.me') || href.includes('api.whatsapp.com') || href.includes('whatsapp://') || href.includes('#whatsapp')) {
+        gtag('event', 'generate_lead', {
+          'event_category': 'Contact',
+          'event_label': 'WhatsApp Click',
+          'link_url': href
+        });
+      }
     
-        if (!link) return;
-    
-        const href = link.getAttribute('href') || '';
-        const text = link.innerText.trim();
-    
-        if (href.includes('wa.me') || href.includes('whatsapp.com')) {
-          gtag('event', 'whatsapp_click', {
-            cta_type: 'whatsapp',
-            cta_text: text || 'WhatsApp CTA',
-            page_location: window.location.href
-          });
-        }
-    
-        if (href.startsWith('mailto:')) {
-          gtag('event', 'email_click', {
-            cta_type: 'email',
-            cta_text: text || 'Email CTA',
-            page_location: window.location.href
-          });
-        }
-      });
+      // Matches ALL Email links (regardless of email address)
+      if (href.startsWith('mailto:') || href.includes('#email')) {
+        gtag('event', 'generate_lead', {
+          'event_category': 'Contact',
+          'event_label': 'Email Click',
+          'link_url': href
+        });
+      }
+    });
     </script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/images/cloverwood-pups-logo.png" />
