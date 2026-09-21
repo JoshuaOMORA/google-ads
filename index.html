@@ -9,6 +9,32 @@
       gtag('js', new Date());
       gtag('config', 'G-W4Q9C2C8YN');
     </script>
+    <script>
+      document.addEventListener('click', function(event) {
+        const link = event.target.closest('a');
+    
+        if (!link) return;
+    
+        const href = link.href || '';
+        const text = link.innerText.trim();
+    
+        if (href.includes('wa.me') || href.includes('whatsapp.com')) {
+          gtag('event', 'whatsapp_click', {
+            event_category: 'engagement',
+            event_label: text || 'WhatsApp CTA',
+            page_location: window.location.href
+          });
+        }
+    
+        if (href.startsWith('mailto:')) {
+          gtag('event', 'email_click', {
+            event_category: 'engagement',
+            event_label: text || 'Email CTA',
+            page_location: window.location.href
+          });
+        }
+      });
+    </script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/images/cloverwood-pups-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
